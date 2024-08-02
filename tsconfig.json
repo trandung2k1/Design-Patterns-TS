@@ -5,7 +5,10 @@
         "target": "es2021",
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowJs": true
     },
     "lib": ["es2015"],
     "exclude": ["node_modules", "dist", "build"],

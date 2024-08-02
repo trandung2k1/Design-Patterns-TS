@@ -2,7 +2,7 @@
     "name": "design-patterns-ts",
     "version": "1.0.0",
     "scripts": {
-        "dev": "nodemon src/app.ts",
+        "dev": "nodemon src/decorator-pattern/main.ts",
         "build": "rm -rf dist && tsc",
         "build:swc": "rm -rf dist && swc src --out-dir dist"
     },
