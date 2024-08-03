@@ -36,7 +36,7 @@ class Service {
 
     async getUser(userId: number) {
         const user = await this.db.findUserById(userId);
-        this.logging.log(`Fetched user ${user.name}`);
+        this.logging.log(`Fetched user ${user!.name}`);
         return user;
     }
 }

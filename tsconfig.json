@@ -1,6 +1,8 @@
 {
+    "files": ["src/app.ts"],
     "compilerOptions": {
         "module": "commonjs",
+        "noImplicitAny": true,
         "esModuleInterop": true,
         "target": "es2021",
         "moduleResolution": "node",
@@ -8,7 +10,8 @@
         "outDir": "dist",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "allowJs": true
+        "allowJs": true,
+        "strict": true
     },
     "lib": ["es2015"],
     "exclude": ["node_modules", "dist", "build"],

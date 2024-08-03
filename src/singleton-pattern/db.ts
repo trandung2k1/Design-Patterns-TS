@@ -6,10 +6,10 @@ class Database {
     public static async getInstance(): Promise<ConnectionPool> {
         if (!Database.instance) {
             const config: SQLConfig = {
-                user: process.env.DB_USER,
-                password: process.env.DB_PASSWORD,
-                server: process.env.DB_SERVER,
-                database: process.env.DB_NAME,
+                user: process.env.DB_USER!,
+                password: process.env.DB_PASSWORD!,
+                server: process.env.DB_SERVER!,
+                database: process.env.DB_NAME!,
                 options: {
                     encrypt: true,
                     trustServerCertificate: true,
